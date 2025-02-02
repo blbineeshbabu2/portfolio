@@ -605,6 +605,9 @@ a{
     .contactContainer{
         justify-items: center;
     }
+    .contactContainer{
+        width: 80%;
+    }
 }
 
 
