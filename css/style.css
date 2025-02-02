@@ -598,6 +598,23 @@ a{
     background-color: var(--hoverBtnCol);
     cursor: pointer;
 }
+.form-group span{
+    color: red;
+    position: relative;
+    top: 0px;
+    left: 0;
+    font-size: 13px;
+}
+#submit-error{
+    color: red;
+}
+.form-group{
+    padding: 10px;
+}
+.form-group i{
+    color: seagreen;
+    position: unset;
+}
 @media(max-width: 550px){
     .contactme{
         font-size: 1.9em;

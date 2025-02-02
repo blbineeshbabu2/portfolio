@@ -324,14 +324,48 @@
          <div id="contactme" class="contactSection container">
             <h1 class="contactme">Contact Me</h1>
             <div class="contactContainer">
-                    <form action="">
-                        <input class="fromInput" placeholder="Name" type="text">
-                        <input class="fromInput" placeholder="Number" type="tel">
-                        <input class="fromInput" placeholder="Email" type="email">
-                        <input class="fromInput" placeholder="Subject" type="text">
-                        <textarea class="fromInput" placeholder="Message" rows="5"  name="" id=""></textarea>
-                        <input id="submitBTN" type="button" value="Submit">
-                    </form>
+                <!-- <form action="https://api.web3forms.com/submit" method="POST" class="bg-light p-4 p-md-5 contact-form">
+                    <input type="hidden" name="access_key" value="527aa6ab-b964-4824-877e-9c61b49ce1e7">
+                    <input name="name" class="form-control fromInput" placeholder="Name" type="text" onkeyup="validateName()">
+                    <span id="name-error">kj</span>
+                    <input name="Phone" class="form-control fromInput" placeholder="Number" type="tel" onkeyup="validatePhone()">
+                    <span id="phone-error"></span>
+                    <input name="Email" class="form-control fromInput" placeholder="Email" type="email" onkeyup="validateEmail()">
+                    <span id="email-error"></span>
+                    <input name="Subject" class="form-control fromInput" placeholder="Subject" type="text" onkeyup="validateSubject()">
+                    <span id="subject-error"></span>
+                    <textarea name="Message" class="form-control fromInput" placeholder="Message" rows="5"  name="" id="" onkeyup="validateMessage()"></textarea>
+                    <span id="message-error"></span>
+                    <input id="submitBTN" type="submit" value="Submit" onclick="return validateForm()">
+                    <span id="submit-error"></span>
+                </form> -->
+                <form action="https://api.web3forms.com/submit" method="POST" class="bg-light p-4 p-md-5 contact-form">
+                    <input type="hidden" name="access_key" value="527aa6ab-b964-4824-877e-9c61b49ce1e7">
+                    <div class="form-group">
+                        <input name="name" type="text" class="form-control fromInput" placeholder="Your Name" id="contact-name" onkeyup="validateName()">
+                        <span id="name-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <input name="Email" type="text" class="form-control fromInput" placeholder="Your Email" id="contact-email" onkeyup="validateEmail()">
+                        <span id="email-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <input name="Phone" type="tel" class="form-control fromInput" placeholder="Your Number" id="contact-phone" onkeyup="validatePhone()">
+                        <span id="phone-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <input name="Subject" type="text" class="form-control fromInput" placeholder="Subject" id="contact-subject" onkeyup="validateSubject()">
+                        <span id="subject-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="Message" cols="30" rows="7" class="form-control fromInput" placeholder="Message" id="contact-message" onkeyup="validateMessage()"></textarea>
+                        <span id="message-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Send Message" id="submitBTN" onclick="return validateForm()">
+                        <span id="submit-error"></span>
+                    </div>
+                </form>
             </div>
          </div>
 
